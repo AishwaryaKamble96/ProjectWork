@@ -6,9 +6,9 @@ body {
 }
 
 main {
-  /* margin: 50px 40px 40px 40px; */
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  margin: 5rem 1rem 5rem 1rem;
+  /* margin-top: 5rem;
+  margin-bottom: 5rem; */
 }
 
 .page_title {
@@ -37,8 +37,9 @@ h1 {
   border-color: coral;
   background-color: rgb(241, 225, 219);
   margin: 30px;
-  padding-top: 40px;
-  padding-bottom: 30px;
+  padding: 1rem;
+  /* padding-top: 40px;
+  padding-bottom: 30px; */
   position: relative;
 }
 
@@ -97,4 +98,46 @@ article .questions_card img {
 }
 footer .navigation_bar img {
   width: 30px;
+}
+
+.profile_name {
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1rem;
+}
+
+.profile_details {
+  background-color: rgb(241, 225, 219);
+  padding: 30px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.about {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.count {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.question_count {
+  font-size: 40px;
+  padding: 1rem;
+  background-color: beige;
+  border-radius: 25%;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.bookmarked_questions_count {
+  font-size: 40px;
+  padding: 1rem;
+  border-radius: 25%;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: row-reverse;
 }
