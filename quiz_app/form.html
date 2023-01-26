@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/form.js" defer></script>
+  </head>
+  <body>
+    <header class="page_title">
+      <h1>HTML Quiz</h1>
+    </header>
+
+    <form class="form" data-js="form">
+      <label for="question"><h2>Your question</h2></label>
+      <textarea
+        required
+        name="question"
+        id="textarea"
+        data-js="question"
+        cols="30"
+        rows="10"
+        maxlength="150"
+      ></textarea>
+      <small class="charater-limit"
+        >(<span data-js="amount-left-question"></span> charater left)</small
+      >
+
+      <label for="answer"><h2>Your answer</h2></label>
+      <textarea
+        required
+        name="answer"
+        id="answer"
+        data-js="answer"
+        cols="30"
+        rows="10"
+        maxlength="150"
+      ></textarea>
+
+      <small class="charater-limit"
+        >(<span data-js="amount-left-answer"></span> charater left)</small
+      >
+      <label for="tag"><h2>Add tag</h2></label>
+      <input required type="text" name="tag" id="tag" />
+
+      <button type="submit" name="submit" class="submit" data-js="form-submit">
+        <span>Submit</span>
+      </button>
+    </form>
+
+    <article class="questions_card" data-js="question_card"></article>
+
+    <footer>
+      <nav class="navigation_bar">
+        <a href="./index.html"
+          ><img src="./assest/home_btn.png" alt="home_btn" />
+        </a>
+        <a href="./bookmarked.html"
+          ><img src="./assest/bookmarked.png" alt="bookmark_btn"
+        /></a>
+        <a href="#form"><img src="./assest/form.png" alt="form" /></a>
+        <a href="./profile.html"
+          ><img src="./assest/profile.png" alt="profile"
+        /></a>
+      </nav>
+    </footer>
+  </body>
+</html>

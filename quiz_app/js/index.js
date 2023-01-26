@@ -6,7 +6,8 @@ const bookmarkImg = document.querySelector('[ data-js="page-bookmark"]');
 // Show buttonevent listner
 showAnswerButton.addEventListener("click", () => {
   answerValue.classList.toggle("show");
-  console.log(showAnswerButton.textContent);
+  showAnswerButton.classList.toggle("show-button--trans");
+
   if (showAnswerButton.textContent === "Show Answer") {
     showAnswerButton.textContent = "Hide Answer";
   } else {

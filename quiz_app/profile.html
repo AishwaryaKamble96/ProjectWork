@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profile</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/profile.js" defer></script>
   </head>
 
-  <body>
+  <body data-js="body">
     <header class="page_title">
       <h1>HTML Quiz</h1>
     </header>
@@ -21,7 +22,7 @@
           alt="Profile_image"
           aria-label="Profile photo"
         />
-        <h2 class="profile_name">Aishwarya Kamble</h2>
+        <h1 class="profile_name">Aishwarya Kamble</h1>
       </article>
 
       <article class="about">
@@ -41,13 +42,9 @@
       </article>
 
       <article class="Setting">
-        <h3>Setting</h3>
-        <h4>Dark Mode</h4>
-
-        <label class="switch">
-          <input type="checkbox" />
-          <span class="slider round"></span>
-        </label>
+        <h2>Setting</h2>
+        <h3>Dark Mode</h3>
+        <button class="switch mode" data-js="switch_mode">Switch Mode</button>
       </article>
     </main>
 
@@ -59,6 +56,7 @@
         <a href="./bookmarked.html"
           ><img src="./assest/bookmarked.png" alt="bookmark_btn"
         /></a>
+        <a href="./form.html"><img src="./assest/form.png" alt="form" /></a>
         <a href="#profile"><img src="./assest/profile.png" alt="profile" /></a>
       </nav>
     </footer>
