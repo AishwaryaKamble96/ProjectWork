@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz</title>
-    <link rel="stylesheet" href="./style.css" />
-    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/index.js" defer></script>
   </head>
 
   <body>
@@ -23,15 +23,16 @@
             class="question_bookmark"
             src="/quiz_app/assest/bookmark.png"
             alt="bookmark"
-            aria-label="bookmarked the question"
+            aria-label="bookmark the question"
+            data-js="page-bookmark"
           />
 
           <!-- Question1 -->
           <h2>What is thee full form of HTML ?</h2>
 
-          <div class="show-button" data-js="show-button">
-            <button>Show Answer</button>
-          </div>
+          <!-- <div class="show-button" data-js="show-button"> -->
+          <button class="show-button" data-js="show-button">Show Answer</button>
+          <!-- </div> -->
           <h3 class="answer" data-js="answer">Hypertext Transfer protool</h3>
           <!-- Tags -->
           <div class="tags_list">
@@ -54,10 +55,7 @@
           <!-- Question3 -->
           <h2>What are different types of lists in HTML?</h2>
 
-          <div class="show-button">
-            <button>Show Answer</button>
-          </div>
-
+          <button class="show-button">Show Answer</button>
           <!-- Tags -->
           <div class="tags_list">
             <div class="tags">#Html</div>
@@ -79,9 +77,7 @@
           <!-- Question1 -->
           <h2>Which of tag do not require a terminator?</h2>
 
-          <div class="show-button">
-            <button>Show Answer</button>
-          </div>
+          <button class="show-button">Show Answer</button>
 
           <!-- Tags -->
           <div class="tags_list">
@@ -104,9 +100,7 @@
           <!-- Question1 -->
           <h2>Which tag is used to insert graphics in the webpage?</h2>
 
-          <div class="show-button">
-            <button>Show Answer</button>
-          </div>
+          <button class="show-button">Show Answer</button>
 
           <!-- Tags -->
           <div class="tags_list">
