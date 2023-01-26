@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz</title>
-    <link rel="stylesheet" href="./style.css" />
-    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/index.js" defer></script>
   </head>
 
   <body>
@@ -21,23 +21,24 @@
           <!-- Bookmarkbutton in question card-->
           <img
             class="question_bookmark"
-            src="/quiz_app/assest/bookmark.png"
+            src="./assest/bookmark.png"
             alt="bookmark"
-            aria-label="bookmarked the question"
+            aria-label="bookmark the question"
+            data-js="page-bookmark"
           />
 
           <!-- Question1 -->
           <h2>What is thee full form of HTML ?</h2>
 
-          <div class="show-button" data-js="show-button">
-            <button>Show Answer</button>
-          </div>
+          <!-- <div class="show-button" data-js="show-button"> -->
+          <button class="show-button" data-js="show-button">Show Answer</button>
+          <!-- </div> -->
           <h3 class="answer" data-js="answer">Hypertext Transfer protool</h3>
           <!-- Tags -->
-          <div class="tags_list">
-            <div class="tags">#Html</div>
-            <div class="tags">#CSS</div>
-          </div>
+          <ul class="tags_list">
+            <li class="tags">#Html</li>
+            <li class="tags">#CSS</li>
+          </ul>
         </div>
 
         <!-- Question 2 -->
@@ -54,15 +55,12 @@
           <!-- Question3 -->
           <h2>What are different types of lists in HTML?</h2>
 
-          <div class="show-button">
-            <button>Show Answer</button>
-          </div>
-
+          <button class="show-button">Show Answer</button>
           <!-- Tags -->
-          <div class="tags_list">
-            <div class="tags">#Html</div>
-            <div class="tags">#CSS</div>
-          </div>
+          <ul class="tags_list">
+            <li class="tags">#Html</li>
+            <li class="tags">#CSS</li>
+          </ul>
         </div>
 
         <!-- Question 4 -->
@@ -79,15 +77,13 @@
           <!-- Question1 -->
           <h2>Which of tag do not require a terminator?</h2>
 
-          <div class="show-button">
-            <button>Show Answer</button>
-          </div>
+          <button class="show-button">Show Answer</button>
 
           <!-- Tags -->
-          <div class="tags_list">
-            <div class="tags">#Html</div>
-            <div class="tags">#CSS</div>
-          </div>
+          <ul class="tags_list">
+            <li class="tags">#Html</li>
+            <li class="tags">#CSS</li>
+          </ul>
         </div>
 
         <!-- Question 4 -->
@@ -104,15 +100,13 @@
           <!-- Question1 -->
           <h2>Which tag is used to insert graphics in the webpage?</h2>
 
-          <div class="show-button">
-            <button>Show Answer</button>
-          </div>
+          <button class="show-button">Show Answer</button>
 
           <!-- Tags -->
-          <div class="tags_list">
-            <div class="tags">#Html</div>
-            <div class="tags">#CSS</div>
-          </div>
+          <ul class="tags_list">
+            <li class="tags">#Html</li>
+            <li class="tags">#CSS</li>
+          </ul>
         </div>
       </article>
     </main>
@@ -123,6 +117,7 @@
         <a href="./bookmarked.html"
           ><img src="./assest/bookmarked.png" alt="bookmark_btn"
         /></a>
+        <a href="./form.html"><img src="./assest/form.png" alt="form" /></a>
         <a href="./profile.html"
           ><img src="./assest/profile.png" alt="profile"
         /></a>

@@ -11,6 +11,11 @@ main {
   margin-bottom: 5rem; */
 }
 
+body.dark {
+  background-color: rgb(31, 30, 30);
+  color: white;
+}
+
 .page_title {
   background-color: rgb(247, 247, 127);
   font-family: "Times New Roman", Times, serif;
@@ -41,6 +46,11 @@ h1 {
   /* padding-top: 40px;
   padding-bottom: 30px; */
   position: relative;
+  display: flex;
+  flex-direction: column;
+  /* justify-items: center;
+  flex-wrap: wrap; */
+  gap: 1rem;
 }
 
 .question_bookmark {
@@ -61,9 +71,8 @@ h1 {
 }
 
 .tags_list {
-  /* justify-content: left; */
   position: relative;
-  /* justify-content: space-between; */
+
   display: flex;
   flex-direction: row;
 }
@@ -80,9 +89,18 @@ h1 {
 }
 
 .show-button {
-  color: blueviolet;
-  display: flex;
-  justify-content: center;
+  color: rgba(228, 20, 100, 0.952);
+  background-color: rgb(231, 186, 186);
+  font-size: 15px;
+  position: absolute;
+  top: 40%;
+  left: 30%;
+
+  transition: background-color 1s;
+}
+
+.show-button--trans {
+  background-color: rgb(123, 226, 102);
 }
 
 footer {
@@ -97,7 +115,7 @@ footer {
 }
 .navigation_bar {
   display: flex;
-  gap: 100px;
+  gap: 3rem;
   justify-content: space-between;
 }
 article .questions_card img {
@@ -105,7 +123,7 @@ article .questions_card img {
 }
 footer .navigation_bar img {
   width: 30px;
-  height: 20px;
+  height: 30px;
 }
 
 .profile_name {
@@ -134,7 +152,7 @@ footer .navigation_bar img {
 .question_count {
   font-size: 40px;
   padding: 1rem;
-  background-color: beige;
+  background-color: rgb(152, 119, 230);
   border-radius: 25%;
   border: 2px solid black;
   display: flex;
@@ -148,4 +166,36 @@ footer .navigation_bar img {
   border: 2px solid black;
   display: flex;
   flex-direction: row-reverse;
+  background-color: rgb(152, 119, 230);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10%;
+  margin: 15% 10%;
+  gap: 10px;
+  background-color: rgb(230, 217, 217);
+}
+
+li {
+  list-style: none;
+}
+
+.submit {
+  background-color: rgb(149, 117, 201);
+  font-size: 1rem;
+  transition: all;
+}
+
+.submit:hover {
+  background-color: rgba(98, 228, 109, 0.623);
+  font-size: 1.5rem;
+}
+
+.submit:hover::after {
+  background-color: rgb(149, 117, 201);
+  font-size: 1rem;
 }
