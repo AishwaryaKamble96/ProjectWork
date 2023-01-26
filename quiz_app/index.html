@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz</title>
     <link rel="stylesheet" href="./style.css" />
+    <script src="./index.js" defer></script>
   </head>
 
   <body>
@@ -18,7 +19,6 @@
       <article class="questions_card">
         <div class="question">
           <!-- Bookmarkbutton in question card-->
-
           <img
             class="question_bookmark"
             src="/quiz_app/assest/bookmark.png"
@@ -29,10 +29,10 @@
           <!-- Question1 -->
           <h2>What is thee full form of HTML ?</h2>
 
-          <div class="show-button">
+          <div class="show-button" data-js="show-button">
             <button>Show Answer</button>
           </div>
-
+          <h3 class="answer" data-js="answer">Hypertext Transfer protool</h3>
           <!-- Tags -->
           <div class="tags_list">
             <div class="tags">#Html</div>
